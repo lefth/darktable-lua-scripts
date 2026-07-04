@@ -637,7 +637,7 @@ local PLACEHOLDERS = {"ROLL.NAME",
 
 local PS        = dt.configuration.running_os == "windows" and  "\\"  or  "/"
 local USER      = os.getenv("USERNAME")
-local HOME      =  dt.configuration.running_os == "windows" and  os.getenv("HOMEPATH") or os.getenv("HOME")
+local HOME      =  dt.configuration.running_os == "windows" and os.getenv("USERPROFILE") or os.getenv("HOME")
 local PICTURES  = HOME .. PS .. (dt.configuration.running_os == "windows" and "My Pictures" or "Pictures")
 local DESKTOP   = HOME .. PS .. "Desktop"
 
